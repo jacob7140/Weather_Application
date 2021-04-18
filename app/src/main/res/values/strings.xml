@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Weather_Application</string>
+    <string name="textTemp">Temperature</string>
+    <string name="textTempMax">Temperature Max</string>
+    <string name="textTempMin">Temperature Min</string>
+    <string name="textDescription">Description</string>
+    <string name="textHumidity">Humidity</string>
+    <string name="textWindSpeed">Wind Speed</string>
+    <string name="textWindDegree">Wind Degree</string>
+    <string name="textCloudiness">Cloudiness</string>
+    <string name="buttonCheckForecast">Check Forecast</string>
+</resources>

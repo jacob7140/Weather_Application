@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewForecastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewForecastTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewForecastTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForecastTime" />
+
+    <TextView
+        android:id="@+id/textViewForecastHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewForecastTemp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForecastTemp" />
+
+    <TextView
+        android:id="@+id/textViewForecastDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewForecastHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForecastHumidity" />
+
+    <TextView
+        android:id="@+id/textViewForecastTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewForecastTemp"
+        app:layout_constraintTop_toTopOf="@+id/textViewForecastTemp" />
+
+    <TextView
+        android:id="@+id/textViewForecastTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewForecastTempMax"
+        app:layout_constraintTop_toTopOf="@+id/textViewForecastTempMax" />
+
+    <ImageView
+        android:id="@+id/forecastImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewForecastTime"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
